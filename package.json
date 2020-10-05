@@ -27,8 +27,7 @@
     "coverage": "node ./node_modules/istanbul/lib/cli.js cover _mocha -- --exit --full-trace ./dist/test/tests.js",
     "postcoverage": "remap-istanbul --input coverage/coverage.raw.json --type lcovonly --output coverage/lcov.info",
     "browser-compile": "webpack --config \"./unpkg-webpack.config.js\"",
-    "prepublishOnly": "npm run clean && npm run compile && npm run browser-compile",
-    "postinstall": "npm rum compile"
+    "prepublishOnly": "npm run clean && npm run compile && npm run browser-compile"
   },
   "peerDependencies": {
     "graphql": ">=0.10.0"
